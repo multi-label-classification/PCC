@@ -1,0 +1,16 @@
+mulan.classifier
+mulan.classifier.lazy
+mulan.classifier.meta
+mulan.classifier.meta.thresholding
+mulan.classifier.neural
+mulan.classifier.neural.model
+mulan.classifier.transformation
+mulan.core
+mulan.data
+mulan.dimensionalityReduction
+mulan.evaluation
+mulan.evaluation.loss
+mulan.evaluation.measure
+mulan.experiments
+mulan.transformations
+mulan.transformations.multiclass
