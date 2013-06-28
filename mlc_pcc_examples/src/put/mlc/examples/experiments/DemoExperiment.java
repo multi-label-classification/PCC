@@ -7,6 +7,7 @@ import java.io.PrintStream;
 import mulan.classifier.transformation.BinaryRelevance;
 
 import put.mlc.classifiers.br.LFP;
+import put.mlc.classifiers.efp.EFP;
 import put.mlc.classifiers.pcc.PCC;
 import put.mlc.classifiers.pcc.inference.Inference;
 import put.mlc.classifiers.pcc.inference.montecarlo.FMeasureMaximizerInference;
@@ -44,10 +45,13 @@ public class DemoExperiment {
 			//BinaryRelevance br = null;
 			//LFP learner = new LFP(br);
 			
+			//...or with EFP algorithm
+			//EFP learner = new EFP();
+			
 			//tuned experiment with the learner as an input
-			TunedExperiment e = new TunedExperiment(learner, 3, 3, 0);
+			TunedExperiment e = new TunedExperiment(learner, 5, 5, 0);
 			//you can use multi-thread version of evaluation
-			e.setMultiThreading(true);
+			e.setMultiThreading(false);
 			//run experiment ant get the result
 			ExperimentResults res = e.evaluation();
 			
