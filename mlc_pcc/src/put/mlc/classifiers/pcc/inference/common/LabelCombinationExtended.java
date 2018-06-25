@@ -53,6 +53,7 @@ public class LabelCombinationExtended extends LabelCombination {
 		this.numLabels = copy.numLabels;
 		this.state = copy.state;
 		this.instance = (Instance) copy.getInstance().copy();
+		this.inference = copy.inference;
 	}
 
 	public void setNextLabel(int prediction, double p) {
